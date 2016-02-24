@@ -1,0 +1,55 @@
+[{
+    constant: false,
+    inputs: [],
+    name: "kill",
+    outputs: [],
+    type: "function"
+}, {
+    constant: false,
+    inputs: [{
+        name: "response",
+        type: "bytes32"
+    }],
+    name: "setResponse",
+    outputs: [],
+    type: "function"
+}, {
+    constant: false,
+    inputs: [],
+    name: "getResponses",
+    outputs: [{
+        name: "_numYes",
+        type: "uint16"
+    }, {
+        name: "_numNo",
+        type: "uint16"
+    }, {
+        name: "_numNotResponse",
+        type: "uint16"
+    }],
+    type: "function"
+}, {
+    constant: false,
+    inputs: [],
+    name: "getNumResponses",
+    outputs: [{
+        name: "numResponses",
+        type: "uint256"
+    }],
+    type: "function"
+}, {
+    constant: false,
+    inputs: [],
+    name: "getQuestion",
+    outputs: [{
+        name: "_question",
+        type: "bytes32"
+    }],
+    type: "function"
+}, {
+    inputs: [{
+        name: "_question",
+        type: "bytes32"
+    }],
+    type: "constructor"
+}]

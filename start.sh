@@ -1,0 +1,1 @@
+geth --genesis genesis_block.json --datadir datadir --networkid 20160224160000 --rpcapi "db,eth,net,personal,web3" --ipcapi "admin,eth,miner" --mine --etherbase 0x0ab1df31c93ecc8758e3e5804d692a0a2cf51cd0 --rpc --rpcaddr 127.0.0.1 --rpcport 8545 --verbosity "3" console 2>> geth.log
