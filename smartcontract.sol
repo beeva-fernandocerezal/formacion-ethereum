@@ -11,14 +11,6 @@ contract Question {
     }
 
     function setResponse(bytes32 response) {
-      if (response == "yes") {
-        responses[msg.sender] = Choices.Yes;
-      } else if (response == "no") {
-        responses[msg.sender] = Choices.No;
-      } else {
-        responses[msg.sender] = Choices.NotResponse;
-      }
-
       bool addrExists = false;
       for (var i=0;i<addrResponses.length;i++) {
         if (addrResponses[i] == msg.sender) {
@@ -29,6 +21,14 @@ contract Question {
 
       if (addrExists == false) {
         addrResponses.push(msg.sender);
+
+        if (response == "yes") {
+          responses[msg.sender] = Choices.Yes;
+        } else if (response == "no") {
+          responses[msg.sender] = Choices.No;
+        } else {
+          responses[msg.sender] = Choices.NotResponse;
+        }
       }
     }
 
